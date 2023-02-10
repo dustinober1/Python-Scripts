@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excel to HTML</title>
+    <style>
+      table {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    {% if df1 %}
+    <h1>Sheet 1</h1>
+    {{ df1|safe }}
+    {% endif %}
+    {% if df2 %}
+    <h1>Sheet 2</h1>
+    {{ df2|safe }}
+    {% endif %}
+    {% if df3 %}
+    <h1>Sheet 3</h1>
+    {{ df3|safe }}
+    {% endif %}
+  </body>
+</html>

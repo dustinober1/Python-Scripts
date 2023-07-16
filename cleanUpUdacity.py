@@ -1,5 +1,7 @@
 import os
 
+"""The code first specifies the folder path where the files are located. It then retrieves the list of files in that folder. For each file, it checks if the filename starts with "1. ", "2. ", "3. ", or ends with ", solution.ipynb". If a file matches any of these conditions, it removes the specified prefixes and/or suffix from the filename using the replace() method. Then, it creates the old and new file paths by joining the folder path with the respective filenames. Finally, it renames the file by moving it from the old path to the new path using the os.rename() function."""
+
 folder_path = "/Users/dustinober/Downloads"
 
 # Get the list of files in the folder
